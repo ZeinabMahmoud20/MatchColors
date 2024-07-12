@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+#staticShapesContainer, #shapesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.static-shape, .shape {
+    cursor: pointer;
+}
+
+/* Styles for Squares */
+.static-shape.square, .shape.square {
+    width: 100px;
+    height: 100px;
+    background-color: #cccccc;
+    transition: background-color 0.3s;
+}
+
+.static-shape.square {
+    background-color: #ff0000; /* Static color for square */
+}
+
+/* Styles for Circles */
+.static-shape.circle, .shape.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.static-shape.circle {
+    background-color: #00ff00; /* Static color for circle */
+}
+
+/* Styles for Triangles */
+/* Triangle pointing upwards */
+.static-shape.triangle-up, .shape.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #cccccc;
+}
+
+.static-shape.triangle-up {
+    border-bottom-color: #5733ff; /* Static color for triangle up */
+}
+
+/* Triangle pointing downwards */
+.static-shape.triangle-down, .shape.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #cccccc;
+}
+
+.static-shape.triangle-down {
+    border-top-color: #0000ff; /* Static color for triangle down */
+}
+
+/* Triangle pointing left */
+.static-shape.triangle-left, .shape.triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-right: 100px solid #cccccc;
+}
+
+.static-shape.triangle-left {
+    border-right-color: #33a5ff; /* Static color for triangle left */
+}
+
+/* Triangle pointing right */
+.static-shape.triangle-right, .shape.triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 100px solid #cccccc;
+}
+
+.static-shape.triangle-right {
+    border-left-color: #a5ff33; /* Static color for triangle right */
+}
